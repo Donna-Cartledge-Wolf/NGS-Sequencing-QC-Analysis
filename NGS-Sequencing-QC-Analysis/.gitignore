@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.DS_Store
+Thumbs.db
+*.egg-info/
+# Do not commit patient, client, or proprietary sequencing data.
+# Demo output in results/ is intentionally tracked for reproducibility.

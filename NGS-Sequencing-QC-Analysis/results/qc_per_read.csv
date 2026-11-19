@@ -1,0 +1,13 @@
+read_id,read_length,mean_phred_arithmetic,pct_bases_Q30_or_above,tail_last10_mean_phred,expected_base_errors,probability_ge1_error_if_independent,N_count,review_flags,trimmed_bases_3prime,post_trim_length,post_trim_expected_errors,retained_after_min_length
+SIM_01,60,40.0,100.0,40.0,0.006,0.005982,0,none,0,60,0.006,True
+SIM_02,60,30.0,80.0,10.0,1.215179,0.721826,0,low_3prime_tail_quality;elevated_expected_errors,12,48,0.015179,True
+SIM_03,60,30.0,100.0,30.0,0.06,0.058264,0,none,0,60,0.06,True
+SIM_04,60,20.0,0.0,20.0,0.6,0.452843,0,low_Q30_fraction;elevated_expected_errors,0,60,0.6,True
+SIM_05,60,32.917,91.667,35.0,0.517393,0.419693,0,elevated_expected_errors,0,60,0.517393,True
+SIM_06,60,32.333,86.667,35.0,0.269426,0.239299,0,elevated_expected_errors,0,60,0.269426,True
+SIM_07,60,35.0,100.0,35.0,0.018974,0.018798,0,none,0,60,0.018974,True
+SIM_08,60,30.0,66.667,20.0,0.212649,0.192375,0,low_Q30_fraction,0,60,0.212649,True
+SIM_09,60,38.733,96.667,40.0,1.267715,0.864595,2,contains_N;elevated_expected_errors,0,60,1.267715,True
+SIM_10,60,30.0,100.0,30.0,0.06,0.058264,0,none,0,60,0.06,True
+SIM_11,60,34.667,98.333,33.0,0.05028,0.049526,0,none,1,59,0.018657,True
+SIM_12,60,38.517,98.333,36.1,0.107428,0.106661,0,none,1,59,0.007428,True

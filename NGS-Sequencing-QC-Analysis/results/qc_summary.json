@@ -1,0 +1,23 @@
+{
+  "dataset": "SYNTHETIC / FOR EDUCATION ONLY",
+  "input_file": "synthetic_reads.fastq",
+  "input_reads": 12,
+  "input_bases": 720,
+  "Q30_or_above_bases": 611,
+  "pct_Q30_or_above_bases": 84.861,
+  "reads_flagged_for_review": 6,
+  "example_review_rule": {
+    "min_Q30_percentage": 80.0,
+    "max_expected_errors": 0.25,
+    "min_tail10_mean_Q": 20.0,
+    "note": "Instructional flags only, not a validated pass/fail decision"
+  },
+  "trim_3prime_below_phred": 20,
+  "minimum_retained_length_bases": 35,
+  "reads_retained_after_trimming": 12,
+  "reads_excluded_for_minimum_length": 0,
+  "bases_removed_from_3prime_tails": 14,
+  "total_expected_errors_before_trimming": 4.385043,
+  "total_expected_errors_across_retained_reads_after_trimming": 3.05342,
+  "interpretation_warning": "No read alignment, viral classification, contamination assessment, diagnostic result, or regulatory validation is performed."
+}

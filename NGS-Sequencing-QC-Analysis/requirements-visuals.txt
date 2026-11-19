@@ -1,0 +1,2 @@
+# Optional: only required to regenerate PNG figures. Core QC requires no packages.
+matplotlib>=3.7,<4
