@@ -1,0 +1,17 @@
+{
+  "dataset": "ENTIRELY SYNTHETIC / EDUCATION ONLY",
+  "pair_count": 8,
+  "alignment_count": 16,
+  "scoring": {
+    "match": 2,
+    "mismatch": -1,
+    "gap": -2
+  },
+  "methods": [
+    "Needleman-Wunsch (global)",
+    "Smith-Waterman (local)"
+  ],
+  "identity_denominator": "All alignment columns, including gaps",
+  "cigar": "Extended teaching notation: = exact, X substitution, I query insertion, D query deletion",
+  "limits": "Linear gap penalty; one deterministically chosen optimum; no affine gaps, uniqueness, MAPQ, biological sequence interpretation or clinical validation"
+}

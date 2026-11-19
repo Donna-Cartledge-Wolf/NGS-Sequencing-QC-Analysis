@@ -130,9 +130,10 @@ output. The repository includes an optional GitHub Actions test workflow.
 No real clinical or client sequencing data are supplied. Never upload
 patient-identifying or proprietary experimental data to a public repository.
 A high Q score is an estimate of instrument base-calling accuracy, **not** proof
-of biological provenance or the absence of contamination. No virus alignment, taxonomic classification, confirmed contamination
-decision, or diagnostic reporting is performed here. The optional synthetic
-control review compares preclassified fictional read-count summaries only.
+of biological provenance or the absence of contamination. No real-virus alignment, taxonomic classification, confirmed contamination
+decision, or diagnostic reporting is performed here. The v1.1 control review
+compares preclassified fictional read-count summaries only; v1.2 and v1.3
+use invented reference and query sequences.
 
 ## Publishing
 
@@ -160,3 +161,31 @@ produces an ambiguous cross-reference match, even at **100% sequence identity**.
 indels, biological reference database, virus identification, or validated
 positive/negative calls. `mapq` is deliberately `NOT_CALCULATED`. See
 [alignment methodology](docs/synthetic_alignment_methodology.md).
+
+
+## Version 1.3: Gapped global/local alignments (synthetic)
+
+A further standalone teaching module implements **Needleman-Wunsch** global
+alignment and **Smith-Waterman** local alignment on invented, short DNA pairs.
+It reports matches, substitutions, insertions and deletions relative to the
+query, deterministic extended CIGAR-like operation strings, identity percentages,
+and alignment coordinates.
+
+```cmd
+py align_gapped_synthetic.py
+py -m unittest discover -s tests -v
+```
+
+Outputs: `results/synthetic_gapped_alignments.csv` and
+`results/synthetic_gapped_summary.json`. No external Python libraries required.
+The example `LOCAL_FLANKS` shows why local and global algorithms can select
+different alignment spans. `HOMOPOLYMER_GAP` illustrates that one chosen gap
+position is not proof of a unique alignment.
+
+**Important limitations:** short synthetic pairs only, single optimal traceback,
+linear gap costs, no reverse-strand search in this module, no MAPQ or biological
+reference databases, and no clinical/GMP validation. See the
+[Version 1.3 methods and verification notes](docs/gapped_alignment_methodology.md).
+
+For a spreadsheet exercise, see the
+[Version 1.3 Excel verification guide](docs/v1_3_excel_verification.md).

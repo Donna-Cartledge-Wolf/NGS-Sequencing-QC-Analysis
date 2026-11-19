@@ -16,3 +16,7 @@ Case studies include:
 | SIM_09 | Ambiguous N calls; high mean quality does not eliminate unresolved bases. |
 
 Do not upload real patient, sponsor, or confidential laboratory data to a public repository.
+
+
+`synthetic_gapped_pairs.csv` contains only invented A/C/G/T strings for v1.3
+Needleman-Wunsch and Smith-Waterman comparisons.

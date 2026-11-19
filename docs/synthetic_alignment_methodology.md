@@ -28,9 +28,9 @@ illustrative, **not** viral or human sequences.
   fabricated from this exercise; output correctly says `NOT_CALCULATED`.
 - Mean identity is not taxonomic confidence or assay sensitivity.
 
-## Explicit non-features
-No real virus/human sequence databases; no BLAST, Smith-Waterman/BWA/minimap2,
-indels, gaps, soft clipping, scoring matrices, paired ends, base-quality-aware
+## Explicit non-features of this v1.2 module
+No real virus/human sequence databases; no BLAST/BWA/minimap2,
+indels, gaps, soft clipping, calibrated scoring, paired ends, base-quality-aware
 alignment, adapter trimming, read duplicates, taxonomic classification, target
 calling, biological inference, sample QC, or GMP/clinical validation.
 The brute-force algorithm is deliberately not scalable and unsuitable for real

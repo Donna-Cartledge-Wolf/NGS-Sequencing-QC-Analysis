@@ -1,0 +1,17 @@
+pair_id,teaching_focus,reference,query,method,score,aligned_reference,aligned_query,reference_start_1based,reference_end_1based,query_start_1based,query_end_1based,matches,substitutions,insertions_in_query,deletions_in_query,identity_pct,operations,status
+EXACT,Perfect match,ACGTTGCA,ACGTTGCA,global,16,ACGTTGCA,ACGTTGCA,1,8,1,8,8,0,0,0,100,8=,ALIGNED
+EXACT,Perfect match,ACGTTGCA,ACGTTGCA,local,16,ACGTTGCA,ACGTTGCA,1,8,1,8,8,0,0,0,100,8=,ALIGNED
+SUBSTITUTION,Single nucleotide substitution,ACGTTGCA,ACGTCGCA,global,13,ACGTTGCA,ACGTCGCA,1,8,1,8,7,1,0,0,87.5,4=1X3=,ALIGNED
+SUBSTITUTION,Single nucleotide substitution,ACGTTGCA,ACGTCGCA,local,13,ACGTTGCA,ACGTCGCA,1,8,1,8,7,1,0,0,87.5,4=1X3=,ALIGNED
+INSERTION_IN_QUERY,Single-base insertion in query,ACGTTGCA,ACGTATGCA,global,14,ACGT-TGCA,ACGTATGCA,1,8,1,9,8,0,1,0,88.8889,4=1I4=,ALIGNED
+INSERTION_IN_QUERY,Single-base insertion in query,ACGTTGCA,ACGTATGCA,local,14,ACGT-TGCA,ACGTATGCA,1,8,1,9,8,0,1,0,88.8889,4=1I4=,ALIGNED
+DELETION_IN_QUERY,Single-base deletion in query,ACGTTGCA,ACGTGCA,global,12,ACGTTGCA,ACG-TGCA,1,8,1,7,7,0,0,1,87.5,3=1D4=,ALIGNED
+DELETION_IN_QUERY,Single-base deletion in query,ACGTTGCA,ACGTGCA,local,12,ACGTTGCA,ACG-TGCA,1,8,1,7,7,0,0,1,87.5,3=1D4=,ALIGNED
+LOCAL_FLANKS,Shared internal motif with mismatching flanks,TTTTACCTGATCGGGG,GGACCTGATCAAAA,global,6,TTTTACCTGATCGGGG,--GGACCTGATCAAAA,1,16,1,14,8,6,0,2,50,2D2X8=4X,ALIGNED
+LOCAL_FLANKS,Shared internal motif with mismatching flanks,TTTTACCTGATCGGGG,GGACCTGATCAAAA,local,16,ACCTGATC,ACCTGATC,5,12,3,10,8,0,0,0,100,8=,ALIGNED
+HOMOPOLYMER_GAP,Gap placement ambiguity in repetitive sequence,AAAAA,AAAA,global,6,AAAAA,-AAAA,1,5,1,4,4,0,0,1,80,1D4=,ALIGNED
+HOMOPOLYMER_GAP,Gap placement ambiguity in repetitive sequence,AAAAA,AAAA,local,8,AAAA,AAAA,1,4,1,4,4,0,0,0,100,4=,ALIGNED
+NO_LOCAL_HIT,No positive-scoring local alignment,AAAA,CCCC,global,-4,AAAA,CCCC,1,4,1,4,0,4,0,0,0,4X,ALIGNED
+NO_LOCAL_HIT,No positive-scoring local alignment,AAAA,CCCC,local,0,,,,,,,0,0,0,0,,,NO_POSITIVE_LOCAL_ALIGNMENT
+SCORING_SENSITIVITY,Mismatch versus two gaps depends on penalty choice,AAA,AAC,global,3,AAA,AAC,1,3,1,3,2,1,0,0,66.6667,2=1X,ALIGNED
+SCORING_SENSITIVITY,Mismatch versus two gaps depends on penalty choice,AAA,AAC,local,4,AA,AA,1,2,1,2,2,0,0,0,100,2=,ALIGNED

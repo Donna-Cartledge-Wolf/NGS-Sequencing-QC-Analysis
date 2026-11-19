@@ -1,0 +1,9 @@
+pair_id,reference,query,teaching_focus
+EXACT,ACGTTGCA,ACGTTGCA,Perfect match
+SUBSTITUTION,ACGTTGCA,ACGTCGCA,Single nucleotide substitution
+INSERTION_IN_QUERY,ACGTTGCA,ACGTATGCA,Single-base insertion in query
+DELETION_IN_QUERY,ACGTTGCA,ACGTGCA,Single-base deletion in query
+LOCAL_FLANKS,TTTTACCTGATCGGGG,GGACCTGATCAAAA,Shared internal motif with mismatching flanks
+HOMOPOLYMER_GAP,AAAAA,AAAA,Gap placement ambiguity in repetitive sequence
+NO_LOCAL_HIT,AAAA,CCCC,No positive-scoring local alignment
+SCORING_SENSITIVITY,AAA,AAC,Mismatch versus two gaps depends on penalty choice
