@@ -4,18 +4,49 @@
   <img src="assets/wolf_analytics_logo.png" alt="Wolf Analytics logo" width="260">
 </p>
 
-**Wolf Analytics | Python-based quality-control demonstration using synthetic FASTQ reads**
+**Wolf Analytics | NGS Sequencing Quality Control and Bioinformatics**
 
-A small, readable, reproducible bioinformatics educational project that parses
-FASTQ data, decodes Phred+33 quality scores, calculates read-level QC metrics,
-compares per-base quality distributions, and demonstrates simple 3' quality
-trimming. Designed to make the distinction between an *average quality score*
-and the *expected burden of base-calling errors* transparent.
+**Python-Based Scientific Data Analysis, Bioinformatics, and Analytical Quality Control**
 
-> **Scope:** All reads are **synthetic**. This is a **teaching and portfolio
-> demonstration**, **not** a clinically or GMP-validated NGS analysis pipeline,
-> a virus detection assay, or software used for patient/client decisions.
-> This project is independent of and not affiliated with any employer or CRO.
+### Project Overview
+
+An independent scientific computing project demonstrating reproducible analysis of synthetic next-generation sequencing (NGS) data using Python.
+
+The project integrates FASTQ quality assessment, viral control analysis, nucleotide reference comparisons, and global/local sequence alignment.
+
+Particular emphasis is placed on scientific accuracy, transparent calculations, reproducibility, independent verification, and quality-focused interpretation of analytical results.
+
+### Scientific and Computational Capabilities
+
+| Version | Analytical Capability | Key Features |
+|---|---|---|
+| **1.0** | FASTQ Quality Control | Phred scoring, expected base-call errors, sequence quality metrics, and 3' quality trimming |
+| **1.1** | Viral Control Analysis | Reads-per-million normalization, extraction-control comparisons, and investigation of ambiguous signals |
+| **1.2** | Nucleotide Sequence Alignment | Sequence identity, mismatch detection, reverse-complement matching, and reference ambiguity |
+| **1.3** | Global and Local Sequence Alignment | Needleman-Wunsch, Smith-Waterman, insertions, deletions, substitutions, and alignment scoring |
+
+### Analytical Verification and Quality Assurance
+
+**55 automated Python tests successfully completed for Version 1.3.**
+
+Selected computational results were independently verified using Microsoft Excel, including:
+
+- Phred quality scores and expected base-calling errors.
+- Viral read normalization and sample-to-control ratios.
+- Nucleotide alignment identity and mismatch calculations.
+- Reverse-complement sequence reconstruction.
+- Cross-reference alignment ambiguity.
+- Insertion, deletion, and substitution scoring.
+
+Independent verification provides additional evidence that selected analytical calculations and example outputs behave as expected.
+
+### Scientific Scope and Limitations
+
+All sequencing data and reference sequences are synthetic.
+
+This project is intended for scientific education, computational method development, and portfolio demonstration. It is not a clinically or GMP-validated NGS pipeline, diagnostic assay, or system for making patient or client testing decisions.
+
+The project is independently maintained and is not affiliated with any employer or contract research organization.
 
 ## Example outputs
 
