@@ -1,4 +1,4 @@
-# Control-aware viral hit triage — synthetic teaching demonstration
+# Control-aware viral hit triage: Synthetic teaching demonstration
 
 **Version 1.1 extension of the Wolf Analytics NGS QC project.**
 

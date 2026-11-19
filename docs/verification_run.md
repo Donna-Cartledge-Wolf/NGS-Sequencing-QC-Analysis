@@ -1,4 +1,4 @@
-# Verification record — v1.0.0
+# Verification record: v1.0.0
 
 The project was executed against the included synthetic FASTQ dataset and
 all 13 standard-library unit tests passed in the build environment.

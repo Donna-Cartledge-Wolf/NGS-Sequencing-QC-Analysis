@@ -96,7 +96,7 @@ The sample `CLIENT_A` contains 7 putative Virus_X reads in 1,200,000 total
 reads (**5.8333 RPM**). Its extraction blank contains 2 in 500,000
 (**4 RPM**). The ratio is **1.4583**, requiring contextual investigation,
 **not** a positive/negative call. If the blank has zero putative hits, the
-ratio is undefined—not an infinite signal. All rows are explicitly marked
+ratio is undefined, not an infinite signal. All rows are explicitly marked
 for *technical review*, not regulatory disposition.
 
 See [Control review methodology](docs/control_review_methodology.md) and
@@ -140,7 +140,7 @@ See [GitHub upload guide](GITHUB_UPLOAD_GUIDE.md) for simple steps using
 GitHub Desktop or Git. Released under the MIT license.
 
 
-## Version 1.2 — Actual sequence-to-reference comparisons (synthetic)
+## Version 1.2: Actual sequence-to-reference comparisons (synthetic)
 
 This module performs **real character-by-character DNA comparisons** against
 **entirely fictional** toy reference sequences; unlike v1.1, it does not rely

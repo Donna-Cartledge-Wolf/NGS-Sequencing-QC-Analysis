@@ -83,7 +83,7 @@ def load_records(path: str | Path) -> list[ControlRecord]:
         except ValueError as exc:
             raise ValueError(f'Row {idx}: malformed percent identity') from exc
         if hits and (identity is None or not (0 <= identity <= 100)):
-            raise ValueError(f'Row {idx}: putative hits require a 0–100 identity')
+            raise ValueError(f'Row {idx}: putative hits require a 0 to 100 identity')
         if not hits and identity is not None:
             raise ValueError(f'Row {idx}: identity requires at least one putative hit')
         sample_key = (batch, sample)
