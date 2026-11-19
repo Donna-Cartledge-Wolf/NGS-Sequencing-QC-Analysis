@@ -1,0 +1,9 @@
+batch_id,sample_id,sample_type,virus_label,total_filtered_reads,putative_viral_reads,distinct_reference_regions,unique_supporting_reads,mean_alignment_identity_pct
+DEMO_001,CLIENT_A,sample,Virus_X,1200000,7,3,3,91.0
+DEMO_001,EXTRACTION_BLANK,extraction_blank,Virus_X,500000,2,1,1,91.0
+DEMO_001,PROCESS_POSITIVE,positive_process_control,Virus_X,450000,100,6,97,99.5
+DEMO_001,CLIENT_B,sample,Virus_X,800000,0,0,0,
+DEMO_001,CLIENT_C,sample,Virus_Y,800000,25,5,19,97.0
+DEMO_001,EXTRACTION_BLANK,extraction_blank,Virus_Y,500000,0,0,0,
+DEMO_001,PROCESS_POSITIVE,positive_process_control,Virus_Y,450000,150,8,145,99.7
+DEMO_001,CLIENT_D,sample,Virus_Y,750000,0,0,0,

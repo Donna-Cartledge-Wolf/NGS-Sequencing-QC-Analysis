@@ -81,6 +81,29 @@ py plot_qc.py
 | `assets/` | Publication-ready PNG figures generated from the CSVs |
 | `docs/` | Scientific methods, limitations, and future development roadmap |
 
+
+## Synthetic viral hit control review (educational extension, v1.1)
+
+A separate, **control-aware review of hypothetical preclassified viral read
+counts** illustrates extraction-blank comparison, RPM normalization, and
+why a low-count sequence match is **not** a confirmed viral detection.
+
+```powershell
+py review_viral_controls.py --input data/synthetic_control_summary.csv --outdir results
+```
+
+The sample `CLIENT_A` contains 7 putative Virus_X reads in 1,200,000 total
+reads (**5.8333 RPM**). Its extraction blank contains 2 in 500,000
+(**4 RPM**). The ratio is **1.4583**, requiring contextual investigation,
+**not** a positive/negative call. If the blank has zero putative hits, the
+ratio is undefined—not an infinite signal. All rows are explicitly marked
+for *technical review*, not regulatory disposition.
+
+See [Control review methodology](docs/control_review_methodology.md) and
+[example CSV output](results/viral_control_review.csv). The script accepts
+**fictional alignment summary metrics as input**; it does not perform actual
+FASTQ alignment or viral classification.
+
 ## Methods at a glance
 
 - Phred base-call error estimate: `p(error) = 10^(-Q / 10)`.
@@ -107,8 +130,9 @@ output. The repository includes an optional GitHub Actions test workflow.
 No real clinical or client sequencing data are supplied. Never upload
 patient-identifying or proprietary experimental data to a public repository.
 A high Q score is an estimate of instrument base-calling accuracy, **not** proof
-of biological provenance or the absence of contamination. No virus alignment,
-classification, control comparison, or diagnostic reporting is performed here.
+of biological provenance or the absence of contamination. No virus alignment, taxonomic classification, confirmed contamination
+decision, or diagnostic reporting is performed here. The optional synthetic
+control review compares preclassified fictional read-count summaries only.
 
 ## Publishing
 

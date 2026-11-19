@@ -1,10 +1,12 @@
-# Planned follow-on development (NOT implemented in v1)
+# Planned follow-on development (beyond v1.1)
 
 1. **Adapter identification and trimming** with platform-appropriate logic.
 2. **Optional alignment exercise** against synthetic human-like and viral-like
    reference sequences; demonstrate ambiguous multi-mapping and MAPQ 0.
-3. **Contamination-control demo** comparing synthetic sample/blank normalized
-   counts, multiple loci, and evidence for or against a viral assignment.
+3. **Extend synthetic control review (v1.1 added)**: the current module compares
+   hypothetical normalized counts, blanks, and supplied region summaries.
+   Future work: examine actual synthetic read alignments and evidence for or
+   against assignments.
 4. **Reference database and pipeline traceability** (version pins, provenance,
    reference indexes, test cases, checksums, and per-run metadata).
 5. **More complete validation-style assessment** using synthetic truth sets and
