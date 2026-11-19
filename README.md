@@ -138,3 +138,25 @@ control review compares preclassified fictional read-count summaries only.
 
 See [GitHub upload guide](GITHUB_UPLOAD_GUIDE.md) for simple steps using
 GitHub Desktop or Git. Released under the MIT license.
+
+
+## Version 1.2 — Actual sequence-to-reference comparisons (synthetic)
+
+This module performs **real character-by-character DNA comparisons** against
+**entirely fictional** toy reference sequences; unlike v1.1, it does not rely
+on preclassified alignment counts. It uses a deliberately simple ungapped
+full-length matcher on both strands and identifies equally best placements.
+
+```powershell
+py align_synthetic_reads.py
+py -m unittest discover -s tests -v
+```
+
+Outputs: `results/synthetic_reference_matches.csv` and
+`results/synthetic_reference_summary.json`. The shared synthetic segment
+produces an ambiguous cross-reference match, even at **100% sequence identity**.
+
+**Not an actual production NGS aligner:** no calibrated mapping quality (MAPQ),
+indels, biological reference database, virus identification, or validated
+positive/negative calls. `mapq` is deliberately `NOT_CALCULATED`. See
+[alignment methodology](docs/synthetic_alignment_methodology.md).

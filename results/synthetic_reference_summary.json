@@ -1,0 +1,15 @@
+{
+  "dataset": "ENTIRELY SYNTHETIC / EDUCATION ONLY",
+  "reads": 8,
+  "reference_count": 3,
+  "max_mismatches": 2,
+  "minimum_read_length": 24,
+  "assignment_counts": {
+    "CROSS_REFERENCE_AMBIGUOUS": 1,
+    "NON_ACGT": 1,
+    "NO_MATCH_WITHIN_LIMIT": 1,
+    "TOO_SHORT": 1,
+    "UNIQUE_BEST_IN_TOY_REFERENCES": 4
+  },
+  "limitations": "Ungapped full-length matches only; toy references; no calibrated MAPQ, taxonomy, pathogen detection, or regulatory results."
+}

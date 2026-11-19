@@ -1,0 +1,9 @@
+read_id,read_length,best_mismatches,best_identity_pct,best_reference,best_position_1based,best_strand,equally_best_placements,equally_best_references,assignment,review_note,mapq
+VIRAL_LIKE_UNIQUE,32,0,100.0,TOY_VIRAL_LIKE,100,+,1,TOY_VIRAL_LIKE,UNIQUE_BEST_IN_TOY_REFERENCES,Unique only within tiny synthetic reference set; not evidence of biological origin,NOT_CALCULATED
+HOST_LIKE_UNIQUE,32,0,100.0,TOY_HOST_LIKE,108,+,1,TOY_HOST_LIKE,UNIQUE_BEST_IN_TOY_REFERENCES,Unique only within tiny synthetic reference set; not evidence of biological origin,NOT_CALCULATED
+AMBIGUOUS_SHARED,32,0,100.0,AMBIGUOUS,,,2,TOY_HOST_LIKE;TOY_VIRAL_LIKE,CROSS_REFERENCE_AMBIGUOUS,Equal-best placements across references; do not infer source,NOT_CALCULATED
+VIRAL_LIKE_REVERSE,32,0,100.0,TOY_VIRAL_LIKE,103,-,1,TOY_VIRAL_LIKE,UNIQUE_BEST_IN_TOY_REFERENCES,Unique only within tiny synthetic reference set; not evidence of biological origin,NOT_CALCULATED
+ONE_MISMATCH,32,1,96.875,TOY_VIRAL_LIKE,100,+,1,TOY_VIRAL_LIKE,UNIQUE_BEST_IN_TOY_REFERENCES,Unique only within tiny synthetic reference set; not evidence of biological origin,NOT_CALCULATED
+NON_ACGT,32,,,,,,0,,NON_ACGT,Ambiguous bases not handled in simplified matcher,NOT_CALCULATED
+TOO_SHORT,14,,,,,,0,,TOO_SHORT,Read below illustrative minimum length,NOT_CALCULATED
+UNMATCHED,32,17,,,,,0,,NO_MATCH_WITHIN_LIMIT,No full-length alignment within illustrative mismatch limit,NOT_CALCULATED
