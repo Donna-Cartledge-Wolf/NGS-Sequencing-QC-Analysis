@@ -1,5 +1,9 @@
 # NGS Sequencing QC Analysis 🐍🧬
 
+<p align="center">
+  <img src="assets/wolf_analytics_logo.png" alt="Wolf Analytics logo" width="260">
+</p>
+
 **Wolf Analytics | Python-based quality-control demonstration using synthetic FASTQ reads**
 
 A small, readable, reproducible bioinformatics educational project that parses
